@@ -27,7 +27,7 @@ Este proyecto es un servicio backend desarrollado en **NestJS** para el procesam
 
 ```bash
 git clone https://github.com/tu-usuario/tu-repo.git
-cd tu-repo 
+cd data-processing-system 
 ````
 
 ### 3. Construir y levantar los contenedores:
