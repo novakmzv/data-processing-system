@@ -26,7 +26,7 @@ Este proyecto es un servicio backend desarrollado en **NestJS** para el procesam
 ### 2. Clonar el repositorio
 
 ```bash
-git clone [https://github.com/tu-usuario/tu-repo.git](https://github.com/novakmzv/data-processing-system.git)
+git clone https://github.com/novakmzv/data-processing-system.git
 cd data-processing-system 
 ````
 
