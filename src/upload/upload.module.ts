@@ -5,7 +5,13 @@ import { BullModule } from '@nestjs/bull';
 
 @Module({
   imports: [
-    BullModule.registerQueue({ name: 'processing-queue' }),
+    BullModule.registerQueue({
+      name: 'processing-queue',
+      redis: {
+        host: process.env.REDIS_HOST ?? 'localhost',
+        port: Number(process.env.REDIS_PORT) ?? 6379,
+      },
+    }),
   ],
   controllers: [UploadController],
   providers: [UploadService],

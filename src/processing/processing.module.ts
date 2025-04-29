@@ -8,6 +8,10 @@ import { DatabaseModule } from '../database/database.module';
   imports: [
     BullModule.registerQueue({
       name: 'processing-queue',
+      redis: {
+        host: process.env.REDIS_HOST ?? 'localhost',
+        port: Number(process.env.REDIS_PORT) ?? 6379,
+      },
     }),
     WebsocketModule,
     DatabaseModule,
